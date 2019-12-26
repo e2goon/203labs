@@ -18,10 +18,17 @@
 
 ## 웹폰트 선언
 
+### SourceHansSansK (국문)
+
 | Weight | File Name             |
 | :----- | :-------------------- |
 | normal | SourceHanSansK-Medium |
 | bold   | SourceHanSansK-Bold   |
+
+### CircularStd (영문)
+
+| Weight | File Name             |
+| :----- | :-------------------- |
 | 200    | CircularStd-Book      |
 | normal | CircularStd-Medium    |
 | bold   | CircularStd-Bold      |
