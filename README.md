@@ -27,13 +27,18 @@
 
 ### CircularStd (영문)
 
-| Weight | File Name             |
-| :----- | :-------------------- |
-| 200    | CircularStd-Book      |
-| normal | CircularStd-Medium    |
-| bold   | CircularStd-Bold      |
+| Weight | File Name          |
+| :----- | :----------------- |
+| 200    | CircularStd-Book   |
+| normal | CircularStd-Medium |
+| bold   | CircularStd-Bold   |
 
 ## 설치방법
 
 1. 처음 프로젝트 시작 시 `$ npm install` 모듈 설치
 1. 작업 시작 시 `$ npm start` 로 로컬웹서버 실행
+
+## 빌드방법
+
+1. `$ npm run build` 빌드 시작
+1. `build/` 폴더 확인
