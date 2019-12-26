@@ -1,5 +1,5 @@
 
-# 우리의 하루
+# 203labs
 
 ## 코딩 컨벤션
 
@@ -10,7 +10,7 @@
 
 - Gulp
   - **File Include** <br>효율적인 웹사이트 운영을 위한 Include 라이브러리
-  - **PostCSS** <br>CSS 압축 지원과 미래의 CSS 기술 적용
+  - **SASS** <br>안정적인 서비스 운영를 위한 CSS 추상화, 캡슐화 사용
 - CSS3
   - 에릭마이어의 [reset.css](https://meyerweb.com/eric/tools/css/reset/)
   - 니콜라스의 [normalize.css](https://necolas.github.io/normalize.css/)
