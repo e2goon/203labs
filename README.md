@@ -16,6 +16,16 @@
   - 니콜라스의 [normalize.css](https://necolas.github.io/normalize.css/)
   - SASS 전처리기 사용. 컴파일러는 `node-sass` 사용
 
+## 웹폰트 선언
+
+| Weight | File Name             |
+| :----- | :-------------------- |
+| normal | SourceHanSansK-Medium |
+| bold   | SourceHanSansK-Bold   |
+| 200    | CircularStd-Book      |
+| normal | CircularStd-Medium    |
+| bold   | CircularStd-Bold      |
+
 ## 설치방법
 
 1. 처음 프로젝트 시작 시 `$ npm install` 모듈 설치
