@@ -5,9 +5,10 @@
 $width: 960px;
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+  font-family: "SourceHansSansK", -apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-weight: 200;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
 }
 
 br {
@@ -19,10 +20,139 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .br {
   display: block;
 }
 
 .wrapper {
-  min-width: $width;
+  margin: 0 auto;
+  max-width: $width;
+}
+
+.header {
+  position: relative;
+  margin: 62px 0;
+  .logo {
+    width: 100px;
+  }
+  .main-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "CircularStd";
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    ul {
+      li {
+        float: left;
+        margin: 0 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+    a {
+      color: #222;
+    }
+  }
+}
+
+.section {
+  &-01 {
+    margin-top: 100px;
+    .title {
+      font-size: 50px;
+      letter-spacing: -1px;
+      font-family: "CircularStd";
+      line-height: normal;
+    }
+    .text {
+      margin: 40px 0;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.63px;
+    }
+    .img {
+      margin: 93px 0;
+      width: 1190px;
+      overflow: hidden;
+    }
+  }
+  &-04 {
+    margin-bottom: 190px;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .title {
+      float: left;
+      width: 100%;
+      margin: 43px 0;
+      color: #222;
+      letter-spacing: -1.88px;
+      font-weight: bold;
+      font-family: "CircularStd";
+      font-size: 100px;
+      line-height: normal;
+    }
+    .text {
+      float: right;
+      margin: 43px 0;
+      font-size: 40px;
+      line-height: 58px;
+      letter-spacing: -1.25px;
+    }
+    .mail {
+      position: relative;
+      margin-top: 50px;
+      padding-bottom: 34px;
+      float: left;
+      display: block;
+      width: 100%;
+      font-size: 80px;
+      font-weight: 200;
+      letter-spacing: -1.5px;
+      color: #222;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 6px;
+        background-color: #313131;
+      }
+    }
+  }
+}
+
+.footer {
+  margin: 125px 0;
+  color: #959595;
+  font-size: 14px;
+  font-family: "CircularStd";
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  img {
+    float: left;
+    width: 100px;
+    opacity: 0.5;
+  }
+  address {
+    margin-top: 3px;
+    float: right;
+  }
 }
