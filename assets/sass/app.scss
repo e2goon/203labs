@@ -27,6 +27,9 @@ img {
 .br {
   display: block;
 }
+.mbr {
+  display: none;
+}
 
 .wrapper {
   margin: 0 auto;
@@ -63,6 +66,9 @@ img {
     a {
       color: #222;
     }
+  }
+  .btn-hamburger {
+    display:none;
   }
 }
 
