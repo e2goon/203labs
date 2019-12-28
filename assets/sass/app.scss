@@ -256,6 +256,8 @@ img {
     position: relative;
     padding-top: calc(100% * (550 / 400));
     background-color: #e9e9e9;
+    transition: box-shadow .4s, transform .2s;
+    cursor: pointer;
     overflow: hidden;
     &::before {
       content: '';
@@ -282,6 +284,10 @@ img {
       left: 0;
       right: 0;
       width: 100%;
+    }
+    &:hover {
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      transform: scale(1.02);
     }
   }
   &-title {
