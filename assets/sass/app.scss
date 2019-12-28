@@ -328,3 +328,40 @@ img {
     float: right;
   }
 }
+
+// easing
+[data-aos] {
+  body[data-aos-easing="203labs"] &,
+  &[data-aos][data-aos-easing="203labs"] {
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+
+// custom transition
+[data-aos="scale-up"] {
+  opacity: 0;
+  transform: translateY(100px) scale(0.8);
+  img {
+    transition: transform 1s;
+    transform: scale(1.2);
+  }
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
+[data-aos="shift-up"] {
+  display: block;
+  opacity: 0;
+  transform: translateY(60px);
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
