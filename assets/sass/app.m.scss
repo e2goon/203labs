@@ -11,6 +11,7 @@
     overflow: hidden;
   }
   .wrapper {
+    overflow:hidden;
     padding: 40px 30px 0 30px;
     max-width: 100%;
   }
@@ -29,13 +30,16 @@
       left: 0;
       width: 100%;
       min-height: 100%;
-      display: block;
+      display: none;
       visibility: hidden;
       padding: 40px 30px 35px 30px;
       opacity: 0;
       background: #000;
       transform: scale(0.9);
       transition: all 0.3s ease-out;
+      &.is-mobile {
+        display:block;
+      }
       .logo {
         display: block;
       }
