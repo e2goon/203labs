@@ -49,20 +49,12 @@
 
   // 스크롤 인터렉션
   function initAOS() {
-    if (window.innerWidth < 768) {
       // 모바일
       AOS.init({
         duration: 1000,
         easing: "203labs",
         anchorPlacement: "top-center"
       });
-    } else {
-      // 데탑
-      AOS.init({
-        duration: 1000,
-        easing: "203labs"
-      });
-    }
   }
 
   // 로드시 실행, 클릭시 인터렉션 버그 대응
