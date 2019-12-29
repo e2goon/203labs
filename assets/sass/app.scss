@@ -123,6 +123,7 @@ img {
       overflow-y: hidden;
       a {
         display: inline-block;
+        min-height:28px;
         margin: 0 13px;
         color: #222;
         &:first-child {

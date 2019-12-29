@@ -181,9 +181,13 @@
         font-size: 40px;
       }
       .category {
+        -webkit-overflow-scrolling:touch;
         margin-bottom: 63px;
         font-size: 20px;
         font-weight: 100;
+        a {
+          min-height:25px;
+        }
       }
     }
     &-04 {
