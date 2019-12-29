@@ -242,6 +242,9 @@
           width: 77px;
         }
       }
+      & ~ .business-group {
+        margin:40px 0 0 0;
+      }
     }
     &-title {
       margin: 0;
@@ -253,8 +256,8 @@
       line-height: 1.75;
     }
     &-img {
-      margin: 0;
-      padding-top: 350px;
+      margin:40px 0 0 0;
+      padding-top: 190px;
     }
   }
 
