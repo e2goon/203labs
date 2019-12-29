@@ -107,8 +107,8 @@
         z-index:10;
         &::before,
         &::after{
+          top:9px;
           right:-3px;
-          top:10px;
           background:#fff;
         }
         &::before{
