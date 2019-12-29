@@ -4,6 +4,7 @@
 }) }}
 
 <div class="wrapper">
+  <!-- header -->
   <header class="header">
     <h1 class="logo" data-aos="fade-right">
       <a href="#"><img src="{{ URL }}/assets/img/logo.png" alt="203Labs"></a>
@@ -82,15 +83,17 @@
     <section id="section-03" class="section section-03">
       <h2 class="title" data-aos="shift-up">Work</h2>
       <nav class="category">
-        <a href="#" data-aos="shift-up" data-aos-delay="0">All</a>
-        <a href="#" data-aos="shift-up" data-aos-delay="100">Strategy</a>
-        <a href="#" data-aos="shift-up" data-aos-delay="200">Consulting</a>
-        <a href="#" data-aos="shift-up" data-aos-delay="300">Digital Experience</a>
-        <a href="#" data-aos="shift-up" data-aos-delay="400">Engineering</a>
+        <!-- all -->
+        <!-- <a href="#" data-aos="shift-up" data-aos-delay="0" data-group="all">All</a> -->
+        <a href="#" data-aos="shift-up" data-aos-delay="100" data-group="strategy">Strategy</a>
+        <a href="#" data-aos="shift-up" data-aos-delay="200" data-group="consulting">Consulting</a>
+        <a href="#" data-aos="shift-up" data-aos-delay="300" data-group="digital-experience">Digital Experience</a>
+        <a href="#" data-aos="shift-up" data-aos-delay="400" data-group="engineering">Engineering</a>
       </nav>
+      <!-- item container  -->
       <div class="masonry">
         <ul class="masonry-list">
-          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000">
+          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000" data-groups='["strategy"]'>
             <div class="card">
               <div class="card-img">
                 <span class="card-img-label">Strategy</span>
@@ -101,7 +104,18 @@
               <span class="card-state">Application development</span>
             </div>
           </li>
-          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000">
+          <li class="masonry-list-item is-two" data-aos="scale-up" data-aos-duration="1000" data-groups='["strategy"]'>
+            <div class="card">
+              <div class="card-img">
+                <span class="card-img-label">Strategy</span>
+                <img src="{{ URL }}/assets/img/@sample1.jpg" alt="">
+              </div>
+              <strong class="card-title">우리의 하루</strong>
+              <span class="card-text">Kids o2o Activity Platform</span>
+              <span class="card-state">Application development</span>
+            </div>
+          </li>
+          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000" data-groups='["digital-experience"]'>
             <div class="card">
               <div class="card-img">
                 <span class="card-img-label">Digital Experience</span>
@@ -111,7 +125,7 @@
               <span class="card-state">in Progress</span>
             </div>
           </li>
-          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000">
+          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000" data-groups='["strategy"]'>
             <div class="card">
               <div class="card-img">
                 <span class="card-img-label">Strategy</span>
@@ -121,7 +135,7 @@
               <span class="card-state">in Progress</span>
             </div>
           </li>
-          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000">
+          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000" data-groups='["digital-experience"]'>
             <div class="card">
               <div class="card-img">
                 <span class="card-img-label">Digital Experience</span>
@@ -131,9 +145,34 @@
               <span class="card-state">in Progress</span>
             </div>
           </li>
+          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000" data-groups='["engineering"]'>
+            <div class="card">
+              <div class="card-img">
+                <span class="card-img-label">Engineering</span>
+              </div>
+              <strong class="card-title">다섯번째 프로젝트</strong>
+              <span class="card-text">Comming Soon</span>
+              <span class="card-state">in Progress</span>
+            </div>
+          </li>
+          <li class="masonry-list-item" data-aos="scale-up" data-aos-duration="1000" data-groups='["consulting"]'>
+            <div class="card">
+              <div class="card-img">
+                <span class="card-img-label">Consulting</span>
+              </div>
+              <strong class="card-title">여섯번째 프로젝트</strong>
+              <span class="card-text">Comming Soon</span>
+              <span class="card-state">in Progress</span>
+            </div>
+          </li>
         </ul>
-        <button type="button" class="masonry-more" data-aos="zoom-in">More <i class="xi-long-arrow-right"></i></button>
+        <!-- more -->
+        <!-- <div class="masonry-align">
+          <button type="button" class="masonry-more" data-aos="zoom-in">More <i class="xi-long-arrow-right"></i></button>
+        </div> -->
+        <div class="masonry-sizer"></div>
       </div>
+      <!-- //item container  -->
     </section>
 
     <section id="section-04" class="section section-04">

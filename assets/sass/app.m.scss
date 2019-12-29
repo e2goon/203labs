@@ -264,14 +264,15 @@
   // masonry
   .masonry {
     &-list {
+      overflow: visible !important;
       &-item {
         width: 100%;
-        padding: 0;
-        &:nth-child(2) {
-          padding: 0;
+        padding:0 0 50px 0;
+        &.is-two {
+          padding:0 0 50px 0;
         }
-        & ~ li {
-          margin-top: 65px;
+        &:last-child{
+          padding-bottom:0;
         }
       }
     }

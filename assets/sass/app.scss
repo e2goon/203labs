@@ -234,16 +234,19 @@ img {
     &-item {
       width: 50%;
       padding: 22px 80px 22px 0;
-      &:nth-child(2) {
+      transition-property: transform, opacity, padding-top !important;
+      &.is-two {
         padding-top: 156px;
       }
     }
   }
+  &-align {
+    margin-top: 40px;
+    text-align:right;
+  }
   &-more {
     position: relative;
-    display: block;
-    margin: 0 auto;
-    margin-top: 40px;
+    display: inline-block;
     padding: 6px 0;
     min-width: 120px;
     text-align: left;
