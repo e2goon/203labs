@@ -2,6 +2,12 @@
   var $body = $("body"),
     $header = $(".header"),
     $btnHamburger = $(".btn-hamburger");
+  var isMobile;
+  $(window).on('resize', function(){
+    var w = $(this).width() <= 768;
+    isMobile = w
+  });
+  $(window).trigger('resize')
 
   // mobile menu click
   $btnHamburger.on("click", function() {
@@ -23,6 +29,10 @@
     $("html, body")
       .stop()
       .animate({ scrollTop: targetOffsetTop + offset }, 1000, "swing");
+    if (isMobile) {
+      $header.removeClass("is-open");
+      $body.removeClass("menu-open");
+    }
   });
 
   // work filter layout
