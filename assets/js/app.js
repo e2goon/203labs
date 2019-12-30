@@ -26,13 +26,14 @@
     } else {
       targetOffsetTop = 0;
     }
-    $("html, body")
-      .stop()
-      .animate({ scrollTop: targetOffsetTop + offset }, 1000, "swing");
     if (isMobile) {
+      targetOffsetTop = targetOffsetTop - 70
       $header.removeClass("is-open");
       $body.removeClass("menu-open");
     }
+    $("html, body")
+      .stop()
+      .animate({ scrollTop: targetOffsetTop + offset }, 1000, "swing");
   });
 
   // work filter layout
