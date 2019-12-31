@@ -302,7 +302,7 @@ img {
     }
     &:hover {
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-      transform: scale(1.02);
+      // transform: scale(1.02);
     }
   }
   &-title {
@@ -318,12 +318,11 @@ img {
   }
   &-state {
     position: absolute;
-    bottom: 90px;
-    right: 60px;
+    bottom: 67px;
+    right: -22px;
     color: #959595;
     font-size: 16px;
     font-family: "CirculaStd";
-    font-weight: 200;
     transform: rotate(90deg);
     transform-origin: 100% 100%;
   }
